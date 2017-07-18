@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58871DE3D5CF35210280E2C5 /* Pods_MComm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C85CFCABFB23464A0FEC18F /* Pods_MComm.framework */; };
 		7FAC309E1F1E6E2B00CA3D34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC309D1F1E6E2B00CA3D34 /* AppDelegate.swift */; };
 		7FAC30A01F1E6E2B00CA3D34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC309F1F1E6E2B00CA3D34 /* ViewController.swift */; };
 		7FAC30A31F1E6E2B00CA3D34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAC30A11F1E6E2B00CA3D34 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		018A154D86666C0BF4CF4E25 /* Pods-MComm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MComm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MComm/Pods-MComm.debug.xcconfig"; sourceTree = "<group>"; };
+		08771588E8F7DE9285F5491E /* Pods-MComm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MComm.release.xcconfig"; path = "Pods/Target Support Files/Pods-MComm/Pods-MComm.release.xcconfig"; sourceTree = "<group>"; };
+		0C85CFCABFB23464A0FEC18F /* Pods_MComm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MComm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAC309A1F1E6E2B00CA3D34 /* MComm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MComm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAC309D1F1E6E2B00CA3D34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FAC309F1F1E6E2B00CA3D34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58871DE3D5CF35210280E2C5 /* Pods_MComm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				7FAC309C1F1E6E2B00CA3D34 /* MComm */,
 				7FAC309B1F1E6E2B00CA3D34 /* Products */,
+				84840109CD2BF36AE0088DB5 /* Pods */,
+				9DC0812A8A77CA44E730E526 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = MComm;
 			sourceTree = "<group>";
 		};
+		84840109CD2BF36AE0088DB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				018A154D86666C0BF4CF4E25 /* Pods-MComm.debug.xcconfig */,
+				08771588E8F7DE9285F5491E /* Pods-MComm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9DC0812A8A77CA44E730E526 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C85CFCABFB23464A0FEC18F /* Pods_MComm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FAC30AC1F1E6E2B00CA3D34 /* Build configuration list for PBXNativeTarget "MComm" */;
 			buildPhases = (
+				EBC81708A48C3786723DA677 /* [CP] Check Pods Manifest.lock */,
 				7FAC30961F1E6E2B00CA3D34 /* Sources */,
 				7FAC30971F1E6E2B00CA3D34 /* Frameworks */,
 				7FAC30981F1E6E2B00CA3D34 /* Resources */,
+				5EF0B6FB6B2297E181A34151 /* [CP] Embed Pods Frameworks */,
+				861C8AA96DA6876818356CDC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EF0B6FB6B2297E181A34151 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MComm/Pods-MComm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		861C8AA96DA6876818356CDC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MComm/Pods-MComm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBC81708A48C3786723DA677 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7FAC30961F1E6E2B00CA3D34 /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		7FAC30AD1F1E6E2B00CA3D34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 018A154D86666C0BF4CF4E25 /* Pods-MComm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MComm/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		7FAC30AE1F1E6E2B00CA3D34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08771588E8F7DE9285F5491E /* Pods-MComm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MComm/Info.plist;
